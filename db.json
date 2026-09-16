@@ -1,0 +1,15 @@
+{
+  "notes": [
+    {
+      "Title": "react",
+      "Content": "file",
+      "id": "lADgk-G0E3c"
+    },
+    {
+      "Title": "java",
+      "Content": "folder",
+      "id": "Jqmh-MaMQzk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

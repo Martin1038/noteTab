@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 60px;
+
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+nav h1 {
+  color: #667eea;
+  font-size: 28px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  padding: 10px 16px;
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #667eea;
+  color: white;
+}
+
+nav ul li a.active {
+  background: #667eea;
+  color: white;
+}
+
+
+/* ================= ADD NOTES ================= */
+
+.addNotes {
+  width: 400px;
+
+  margin: 60px auto;
+  padding: 35px;
+
+  background: white;
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.addNotes h1 {
+  text-align: center;
+  color: #667eea;
+
+  margin-bottom: 10px;
+}
+
+.addNotes p {
+  text-align: center;
+  color: #777;
+
+  margin-bottom: 30px;
+}
+
+.addNotes form {
+  display: flex;
+  flex-direction: column;
+}
+
+.addNotes label {
+  margin-bottom: 8px;
+
+  color: #333;
+  font-weight: bold;
+}
+
+.addNotes input,
+.addNotes textarea {
+  width: 100%;
+
+  padding: 12px;
+  margin-bottom: 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  font-size: 15px;
+  outline: none;
+}
+
+.addNotes input:focus,
+.addNotes textarea:focus {
+  border-color: #667eea;
+
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+.addNotes textarea {
+  height: 150px;
+  resize: none;
+}
+
+.addNotes button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #667eea;
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.addNotes button:hover {
+  background: #4f63c5;
+  transform: translateY(-2px);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+  nav {
+    padding: 0 20px;
+  }
+
+  nav h1 {
+    font-size: 22px;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  nav ul li a {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .addNotes {
+    width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+  }
+}
+
+.displayNotes {
+    min-height: 100vh;
+    padding: 50px 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.displayNotes h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.note {
+    width: 70%;
+    margin: 20px auto;
+    padding: 25px 30px;
+
+    background: white;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.note h2 {
+    margin-bottom: 12px;
+    color: #333;
+    font-size: 25px;
+}
+
+.note p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.note button,
+.note a {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-right: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.note a {
+    background: #667eea;
+    color: white;
+}
+
+.note button {
+    background: #e74c3c;
+    color: white;
+}
+
+.note a:hover {
+    background: #4f63c7;
+}
+
+.note button:hover {
+    background: #c0392b;
+}
+/* ================= UPDATE NOTES ================= */
+
+.updateNotes {
+    min-height: 100vh;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.updateNotes h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.updateNotes form {
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    padding: 35px;
+
+    background: white;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.updateNotes label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #333;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.updateNotes input,
+.updateNotes textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+.updateNotes textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.updateNotes input:focus,
+.updateNotes textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+.updateNotes button {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #667eea;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.updateNotes button:hover {
+    background: #4f63c7;
+}
