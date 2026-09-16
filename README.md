@@ -1,16 +1,103 @@
-# React + Vite
+# 📝 NoteApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and user-friendly Note Management Application built using React.
 
-Currently, two official plugins are available:
+The application allows users to create, view, edit, and delete notes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Technologies Used
 
-## React Compiler
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Axios
+- React Router
+- JSON Server
+- Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ➕ Add new notes
+- 📋 Display all notes
+- ✏️ Edit existing notes
+- 🗑️ Delete notes
+- 🔄 Navigate between pages using React Router
+- 🌐 Perform API requests using Axios
+- 💾 Store note data using JSON Server
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```text
+src/
+├── Pages/
+│   ├── AddNotes.jsx
+│   ├── DisplayNotes.jsx
+│   └── UpdateNotes.jsx
+│
+├── Service/
+│   └── noteService.js
+│
+├── axios/
+│   └── api.js
+│
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+
+db.json
+package.json
+vite.config.js
+
+▶️ How to Run the Project
+1. Clone the repository
+git clone https://github.com/Martin1038/noteTab.git
+2. Open the project
+cd noteTab
+3. Install dependencies
+npm install
+4. Start JSON Server
+
+Open a terminal and run:
+
+npx json-server db.json
+5. Start the React application
+
+Open another terminal and run:
+
+npm run dev
+
+The application will then be available at the local address shown by Vite.
+
+📸 Screenshots
+
+Add screenshots of your application here.
+
+Example:
+
+![Home Page](screenshots/home.png)
+
+![Display Notes](screenshots/display-notes.png)
+🎯 Learning Objectives
+
+This project was created to practice:
+
+React components
+React Hooks
+useState
+React Router
+Axios
+CRUD operations
+REST API concepts
+JSON Server
+Form handling
+Git and GitHub
+👨‍💻 Author
+
+Martin
+
+Frontend / React Developer
+
+GitHub
+
+https://github.com/Martin1038
