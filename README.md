@@ -1,10 +1,10 @@
-# 📝 NoteApp
+📝 NoteApp
 
 A simple and user-friendly Note Management Application built using React.
 
 The application allows users to create, view, edit, and delete notes.
 
-## 🚀 Technologies Used
+🚀 Technologies Used
 
 - React.js
 - JavaScript
@@ -15,7 +15,7 @@ The application allows users to create, view, edit, and delete notes.
 - JSON Server
 - Vite
 
-## ✨ Features
+✨ Features
 
 - ➕ Add new notes
 - 📋 Display all notes
@@ -25,7 +25,7 @@ The application allows users to create, view, edit, and delete notes.
 - 🌐 Perform API requests using Axios
 - 💾 Store note data using JSON Server
 
-## 📂 Project Structure
+📂 Project Structure
 
 ```text
 src/
@@ -48,24 +48,43 @@ src/
 db.json
 package.json
 vite.config.js
+```
 
 ▶️ How to Run the Project
+
 1. Clone the repository
+
+```bash
 git clone https://github.com/Martin1038/noteTab.git
+```
+
 2. Open the project
+
+```bash
 cd noteTab
+```
+
 3. Install dependencies
+
+```bash
 npm install
+```
+
 4. Start JSON Server
 
 Open a terminal and run:
 
+```bash
 npx json-server db.json
+```
+
 5. Start the React application
 
 Open another terminal and run:
 
+```bash
 npm run dev
+```
 
 The application will then be available at the local address shown by Vite.
 
@@ -73,28 +92,26 @@ The application will then be available at the local address shown by Vite.
 
 Add screenshots of your application here.
 
-Example:
+![Add Notes](/Images/AddNotes.PNG)
 
-![Home Page](screenshots/home.png)
-
-![Display Notes](screenshots/display-notes.png)
 🎯 Learning Objectives
 
 This project was created to practice:
 
-React components
-React Hooks
-useState
-React Router
-Axios
-CRUD operations
-REST API concepts
-JSON Server
-Form handling
-Git and GitHub
+- React components
+- React Hooks
+- useState
+- React Router
+- Axios
+- CRUD operations
+- REST API concepts
+- JSON Server
+- Form handling
+- Git and GitHub
+
 👨‍💻 Author
 
-Martin
+**Martin**
 
 Frontend / React Developer
 
